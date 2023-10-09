@@ -1,0 +1,129 @@
+
+<header class="header">
+    <img src="../assets/Images/9.png" alt="Refund Icon" style="width: 5cm; height: 2cm;">
+    
+    <nav class="nav-items">
+      <a class='fas fa-clipboard' href="/dashboard"  >Dashboard</a>
+      <a class='fas fa-chalkboard' href="/empabout">About</a>
+      <a class='fas fa-phone-alt' href="/hcontact">Contact</a>
+      <button class="btn btn-danger"><a href="" >Logout <i class='fas fa-sign-out-alt'></i></a></button>
+      
+    </nav>
+  </header>
+  
+  
+  
+                  
+                  
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  
+  
+  
+  <div class="content"  >
+
+    
+    <div class="container rounded bg-white mt-5 mb-5" *ngFor="let user of myemployee">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="../assets/Images/man.png"><span class="font-weight-bold">{{user.ename}}</span><span class="text-black-50">{{user.email}}</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h1 class="text-right" style="font-weight: bold;">My Profile</h1>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value="{{user.ename}}" readonly></div>
+                       
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="enter email id" value="{{user.email}}" readonly></div>
+                        <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" value="{{user.mobile}}" readonly></div>
+                        <div class="col-md-12"><label class="labels">Gender</label><input type="text" class="form-control" placeholder="enter address line 2" value="{{user.gender}}" readonly></div>
+                        <div class="col-md-12"><label class="labels">Address</label><textarea type="text" class="form-control" placeholder="enter address line 1" value="{{user.address}}" readonly></textarea></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value="India" readonly></div>
+                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="Tamil Nadu" placeholder="state" readonly></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                     <br>
+                     <br>
+                     <br>
+                    <div class="col-md-12"><label class="labels">Department</label><input type="text" class="form-control" placeholder="experience" value="{{user.position}}" readonly></div> <br>
+                    <div class="col-md-12"><label class="labels">Salary</label><input type="text" class="form-control" placeholder="additional details" value="{{user.salary}}" readonly></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+  </html>
+  
+  
+  
+    
+    
+  <footer class="footer">
+    
+    <div class="copy">© 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

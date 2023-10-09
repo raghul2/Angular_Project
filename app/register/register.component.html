@@ -1,0 +1,160 @@
+
+
+
+
+<header class="header">
+  <img src="../assets/Images/9.png" alt="Refund Icon" style="width: 5cm; height: 2cm;">
+  
+  <nav class="nav-items">
+    <a class='fas fa-clipboard' href="/admindash"  >Dashboard</a>
+   
+    <button class="btn btn-danger"><a href="" >Logout <i class='fas fa-sign-out-alt'></i></a></button>
+    
+  </nav>
+</header>
+
+
+
+                
+                
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+  <br>
+  <!--&nbsp;&nbsp;&nbsp;&nbsp;<img src="../assets/Images/man.png" alt="Refund Icon" style="width: 3cm; height: 2cm;">-->
+  
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../assets/Images/man.png" alt="Refund Icon" style="width: 3cm; height: 2cm;">
+  <h3 class="nav-items">{{loggedInUser}}</h3>
+  <br>
+  
+  <a href="#jh">News</a>
+  <a href="#bhu">Contact</a>
+  <a href="#u">About</a>
+</div>
+
+
+<div class="content"  >
+  <br>
+  <h1 class="gradient-texts">Add Employee Form</h1>
+  <br>
+  <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color: antiquewhite;">
+  <div class="container my-container">
+    <form [formGroup]="register" (ngSubmit)="registerdata(register)" class="form-box1">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" formControlName="fname" class="form-control" placeholder="Enter First Name"
+          [ngClass]="{'mb-3': register.controls.fname.valid, 'mt-3': register.controls.fname.invalid && register.controls.fname.touched}">
+        <div *ngIf="register.controls.fname.invalid && register.controls.fname.touched" class="text-danger">
+          First Name is required
+        </div>
+      </div>
+<br>
+      
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" formControlName="email" class="form-control" placeholder="Enter Email"
+          [ngClass]="{'mb-3': register.controls.email.valid, 'mt-3': register.controls.email.invalid && register.controls.email.touched}">
+        <div *ngIf="register.controls.email.invalid && register.controls.email.touched" class="text-danger">
+          Enter a valid email address
+        </div>
+      </div>
+<br>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" formControlName="phone" class="form-control" placeholder="Enter Phone Number"
+          [ngClass]="{'mb-3': register.controls.phone.valid, 'mt-3': register.controls.phone.invalid && register.controls.phone.touched}">
+        <div *ngIf="register.controls.phone.invalid && register.controls.phone.touched" class="text-danger">
+          Phone number must be 10 digits starting with a number between 6 and 9
+        </div>
+      </div>
+<br>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" formControlName="password" class="form-control" placeholder="Enter Password"
+          [ngClass]="{'mb-3': register.controls.password.valid, 'mt-3': register.controls.password.invalid && register.controls.password.touched}">
+        <div *ngIf="register.controls.password.invalid && register.controls.password.touched" class="text-danger">
+          Password must be at least 8 characters long, start with an uppercase letter, and contain at least one lowercase letter, one digit, and one special character.
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+
+      
+      
+    </form>
+  </div>
+
+  <!-- Include Angular and other required scripts here -->
+</body>
+</html>
+  
+    </div>
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer">
+  <div class="copy">© 2022 Developer</div>
+  <div class="bottom-links">
+    <div class="links">
+      <span>More Info</span>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="links">
+      <span>Social Links</span>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

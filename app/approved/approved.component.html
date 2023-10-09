@@ -1,0 +1,93 @@
+<header class="header">
+  <img src="../assets/Images/9.png" alt="Refund Icon" style="width: 5cm; height: 2cm;">
+    
+    <nav class="nav-items">
+      <a class='fas fa-clipboard' href="/admindash"  >Dashboard</a>
+      
+      <button class="btn btn-danger"><a href="" >Logout <i class='fas fa-sign-out-alt'></i></a></button>
+      
+    </nav>
+  </header>
+  
+  
+  <div class="content"  >
+    <br>
+    
+    <table class="table table-striped">
+      <thead>
+        <tr>
+       
+          <th>EmployeeName</th>
+          <th>Email</th>
+          <th>PhoneNumber</th>
+          <th>ExpenseType</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Currency</th>
+          <th>Description</th>
+          <th>Status</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employees">
+         
+          <td>{{ emp.EmpName }}</td>
+          <td>{{ emp.Email }}</td>
+          <td>{{ emp.PhoneNumber }}</td>
+          <td>{{ emp.ExpenseType }}</td>
+          <td>{{ emp.ClaimDate }}</td>
+          <td>{{ emp.Amount }}</td>
+          <td>{{ emp.Currency }}</td>
+          <td>{{ emp.DescribeNote }}</td>
+          <td>{{ emp.ClaimStatus }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{ modalTitle }}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="p-2 w-50 bd-highlight">
+               
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+  
+  
+  
+    <footer class="footer">
+      <div class="copy">© 2022 Developer</div>
+      <div class="bottom-links">
+        <div class="links">
+          <span>More Info</span>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="links">
+          <span>Social Links</span>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>

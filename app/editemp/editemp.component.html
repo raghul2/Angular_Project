@@ -1,0 +1,123 @@
+<header class="header">
+    <img src="../assets/Images/9.png" alt="Refund Icon" style="width: 5cm; height: 2cm;">
+      
+      <nav class="nav-items">
+        <a class='fas fa-clipboard' href="/admindash"  >Dashboard</a>
+        <button class="btn btn-danger"><a href="" >Logout <i class='fas fa-sign-out-alt'></i></a></button>a>
+       
+        
+      </nav>
+    </header>
+    
+    <div>
+        <div>
+   
+    <div class="content"  >
+      <br>
+      <div>
+        <h1>Employee Management Edit</h1>
+  
+          <hr>
+          <div class="container-fluid">
+              <form>
+                  <div class="row">
+                      <div class="col-4">
+                          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+                              <mat-label>Employee id</mat-label>
+                              <input matInput type="number" name="eid"[(ngModel)]="empy.eid" placeholder="Enter Employee Id" >
+                            </mat-form-field>
+                      </div>
+  
+                      <div class="col-4">
+                          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+                              <mat-label>Employee Name</mat-label>
+                              <input matInput type="text" name="ename"[(ngModel)]="empy.ename" placeholder="Enter Employee Name" >
+                            </mat-form-field>
+                      </div>
+  
+                      <div class="col-4">
+                          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+                              <mat-label>Phone number</mat-label>
+                              <input matInput type="number" name="mobile"[(ngModel)]="empy.mobile" placeholder="Enter Phonenumber" >
+                            </mat-form-field>
+                      </div>
+                  </div>
+  
+  <div class="row">
+      <div class="col-4">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput type="email" name="email"[(ngModel)]="empy.email"  placeholder="Enter Email Id" >
+            </mat-form-field>
+      </div>
+  
+      <div class="col-4">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+              <mat-label>Employee Address</mat-label>
+              <textarea matInput type="name" name="address"[(ngModel)]="empy.address" placeholder="Enter Address" ></textarea>
+            </mat-form-field>
+      </div>
+  
+      <div class="col-4">
+          <mat-form-field [style.width.px]=357 class="example-full-width" appearance="outline">
+              <mat-label>Salary</mat-label>
+              <input matInput type="number" name="salary"[(ngModel)]="empy.salary" placeholder="Salary" >
+            </mat-form-field>
+      </div>
+  
+  </div>
+  
+  <div class="row">
+      <div class="col-4">
+          <mat-form-field appearance="outline" [style.width.px]=357>       
+              <mat-select name="gender"[(ngModel)]="empy.gender" placeholder="Gender">
+                <mat-option  *ngFor="let gender of usergender" [value]="gender.value">
+                  {{gender.viewvalue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+      </div>
+  
+  
+      <div class="col-4">
+          <mat-form-field appearance="outline" [style.width.px]=357>       
+              <mat-select name="position"[(ngModel)]="empy.position" placeholder="Postion">
+                <mat-option  *ngFor="let userposition of position" [value]="userposition.value">
+                  {{userposition.viewvalue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+      </div>
+  </div>
+  
+  
+  
+              </form>
+              <div style="text-align:center;">
+                  <button (click)="updatedata()" type="button" class="btn btn-warning margin-left">Update</button>&nbsp;
+                  <button type="button" class="btn btn-danger margin-left"><a style="color: white;" href="/viewemp">View</a></button>
+              </div>
+          </div>
+          <br>
+  
+      
+      
+        <footer class="footer">
+          <div class="copy">© 2022 Developer</div>
+          <div class="bottom-links">
+            <div class="links">
+              <span>More Info</span>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="links">
+              <span>Social Links</span>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </footer>

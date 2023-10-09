@@ -1,0 +1,61 @@
+{
+  "register": [
+    {
+      "fname": "Raghul",
+      "lname": "R",
+      "email": "dynamo@gmail.com",
+      "phone": "6369572376",
+      "password": "Raghul@27",
+      "id": 1
+    },
+    {
+      "fname": "Hari",
+      "lname": "H",
+      "email": "hari@gmail.com",
+      "phone": "7897897892",
+      "password": "Hari@271",
+      "id": 2
+    },
+    {
+      "fname": "Kumar",
+      "email": "kumar@gmail.com",
+      "phone": "7890789056",
+      "password": "Kumar@123",
+      "id": 3
+    }
+  ],
+  "Admin": [
+    {
+      "fname": "Admin",
+      "lname": "A",
+      "email": "Admin@gmail.com",
+      "phone": "6369572376",
+      "password": "Admin@27",
+      "id": 1
+    }
+  ],
+  "Management": [
+    {
+      "eid": 1,
+      "ename": "Raghul",
+      "mobile": 6369572376,
+      "email": "raghul@gmail.com",
+      "address": "Mayiladuthurai",
+      "salary": 50000,
+      "gender": "Male",
+      "position": "Developer",
+      "id": 1
+    },
+    {
+      "eid": 2,
+      "ename": "Hari",
+      "mobile": 5678567890,
+      "email": "hari@gmail.com",
+      "address": "Rameshwaram",
+      "salary": 45000,
+      "gender": "Male",
+      "position": "Developer",
+      "id": 2
+    }
+  ]
+}
